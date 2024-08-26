@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"> Umesh Indla</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"> Umesh Indla</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt=" Umesh Indla profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title"> Umesh Indla</h1>
+        <p class="section__text__p2">DevOps Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/umeshvarmachandra/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/umechand'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6+ years <br />DevOps Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BTech, Information Technology<br />Masters, Information Science/Studies</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Experienced DevOps Engineer with over 6+ years of expertise in automating and optimizing large-scale cloud applications. Proficient in CI/CD, infrastructure as code, and container orchestration. Successfully led CI/CD pipeline implementations, reducing deployment times by 50% and optimizing infrastructure, which resulted in a 30% cost reduction. Worked with cross-functional teams to improve scalability and uptime, achieving 99.99% availability.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C / C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C# / Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python / Go</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Perl / Ruby</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Azure DevOps</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Aws DevOps</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub / Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CI/CD</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jenkins</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sonar Cube</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      
+      <!-- Experience Cards -->
+      <div class="experience-card">
+        <h3>Oct 2023 - Present</h3>
+        <h2>Business Data Analyst</h2>
+        <p>Wells Fargo</p>
+        <p>Utah</p>
+        <ul>
+          <li>Utilized SQL queries and data exploration techniques to analyze client's wealth management data, identifying patterns and trends that led to a 15% increase in sales.</li>
+          <li>Executed Power BI for data visualization, Power Apps for streamlined application development, and Power Automate for workflow automation, improving operational efficiency by 30%.</li>
+          <li>Applied Python libraries such as Pandas and NumPy for exploratory data analysis (EDA) to uncover insights and trends in client financial profiles and investment performance.</li>
+          <li>Collaborated with cross-functional teams to define relevant KPIs and report requirements, ensuring alignment with business goals. Achieved a 15% improvement in data relevance through strategic collaboration and goal-driven reporting leads.</li>
+        </ul>
+      </div>
+    
+      <div class="experience-card">
+        <h3>October 2023 – Present</h3>
+        <h2>DevOps/SRE & Cloud Engineer</h2>
+        <p>Fifth Third Bank, Remote</p>
+        <ul>
+          <li>Initiated Azure services, including Virtual Machines (VMs), Virtual Networks (VNet), Subnets, Routing, Azure Load Balancer, Virtual Machine Scale Sets (VMSS), Azure DNS, Managed Disks, Azure Blob Storage, Azure Monitor, Azure Queue Storage, Azure Cache for Redis, Azure Functions, API Management, Azure Activity Log, Azure Active Directory (AAD), Azure Kubernetes Service (AKS), and Azure Container Registry (ACR).</li>
+          <li>Applied robust CI/CD pipelines using Azure Developer Tools, automating build, testing, and deployment; revamped development speed by 40% and affirmed high-quality releases by integrating DevSecOps and cybersecurity principles.</li>
+          <li>Setup and administered WebLogic/WebSphere Servers on RedHat (RHEL) Linux and Windows platforms; Bettered server performance by 30% and Enriched downtime by 25% over a 6-month period.</li>
+          <li>Ensured compliance with industry standards and best practices for Kubernetes clusters on Azure, Including security, performance, and scalability in all DevOps architectural designs, achieving a 99.9% adherence rate.</li>
+          <li>Implemented comprehensive monitoring solutions using Azure Monitor, Prometheus, and Grafana, enhancing system observability and reducing mean time to detection (MTTD) by 50%.</li>
+        </ul>
+      </div>
+    
+      <div class="experience-card">
+        <h3>August 2022 – December 2023</h3>
+        <h2>Graduate Teaching Assistant</h2>
+        <p>University of Utah, SLC</p>
+        <ul>
+          <li>Mentored 80+ undergraduate students in SQL for data analysis, enhancing Power BI skills and enabling creation of interactive dashboards, driving substantial data-driven insights and improving overall course performance by 25%.</li>
+        </ul>
+      </div>
+    
+      <div class="experience-card">
+        <h3>October 2021 – August 2022</h3>
+        <h2>DevOps Engineer</h2>
+        <p>Infosys Pvt LTD, Hyderabad</p>
+        <ul>
+          <li>Pioneered server infrastructure migration to Azure, managing Linux and Windows environments, enhancing performance by 50%, and ensuring data integrity during the transfer of 1TB+ of critical information.</li>
+          <li>Integrated Git with Jenkins to implement robust CI/CD pipelines, automating code builds, testing, and deployments, resulting in a 50% reduction in deployment time and a 30% decrease in deployment errors.</li>
+          <li>Designed and deployed scalable applications using Azure Cloud Infrastructure services, Contributed to development of cost optimization tool POC for Azure Virtual Machines, reducing expenses by 32%.</li>
+          <li>Developed and maintained Infrastructure as Code (IaC) using Terraform and Azure Resource Manager (ARM) templates to provision and manage resources in Azure and AWS, decreasing provisioning times by 60%.</li>
+          <li>Engineered a robust CI/CD pipeline with FluxCD and ArgoCD, automating Kubernetes cluster management and reducing manual intervention by 80%, leading to a 25% increase in deployment efficiency.</li>
+        </ul>
+      </div>
+    
+      <div class="experience-card">
+        <h3>June 2018 – September 2021</h3>
+        <h2>DevOps Engineer</h2>
+        <p>Tata Consultancy Services, Hyderabad</p>
+        <ul>
+          <li>Streamlined server patching and updates with Ansible, reducing system downtime by 30% and ensuring compliance with security standards, Developed and maintained Ansible playbooks for deploying applications and services improved deployment speed by 23%.</li>
+          <li>Orchestrated Kubernetes chart management with Helm, creating reproducible builds for applications, managing deployment and service files, and overseeing Helm package releases, enhancing deployment efficiency by 40% and reducing downtime by 25%.</li>
+          <li>Engineered RESTful and SOAP APIs that enabled seamless integration between 10+ enterprise applications, reducing data transfer time by 40% and improving system interoperability by 25%.</li>
+          <li>Exploited Performance Optimization strategies in the development of a continuous integration pipeline, leading to a 15% increase in deployment speed.</li>
+        </ul>
+      </div>
+    
+      <div class="experience-card">
+        <h3>July 2017 – Jan 2018</h3>
+        <h2>Student Intern</h2>
+        <p>HDFC Bank Pvt LTD, Hyderabad</p>
+        <ul>
+          <li>Positioned action a robust Microservices architecture for application development using Azure and Docker, enhancing continuous delivery and boosting system availability by 40% with Azure Classic and Azure Resource Manager deployment models.</li>
+          <li>Configured Azure Virtual Appliances utilizing VMware to create robust firewall solutions, ensuring compliance with security standards and reducing unauthorized access incidents by 45% across all virtual environments.</li>
+          <li>Configured and activated servers using Azure Resource Manager (ARM) Templates and Azure Portal; transitioned 55+ on-premises virtual machines to Azure, cutting maintenance costs by 30%.</li>
+        </ul>
+      </div>
+    
+    </section>
+    
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:indlau581@gmail.com">indlau581@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024  Umesh Indla. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
